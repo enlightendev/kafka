@@ -22,7 +22,8 @@ phases:
       - gradle srcJar
   post_build:
     commands:
-      - echo Nothing to do in the post_build phase...
+      - echo running tests ...
+      - gradle unitTest
 artifacts:
   files:
     - 'core/build/libs/*.jar'
